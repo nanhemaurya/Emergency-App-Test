@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".MainActivityItemView">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/toolbar" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--<include layout="@layout/activity_main_item_view_recycler_view_layout"/>-->
+            <!--<include layout="@layout/activity_main_item_view_recycler_view_layout"/>
+            <include layout="@layout/activity_main_item_view_recycler_view_layout"/>
+-->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/contents_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/popup_cont"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/popup_cont_bg"
+            android:background="#D9FAFAFA"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <LinearLayout
+            android:id="@+id/number_cont"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/primary_number"
+                android:background="@drawable/mobile_number_bg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/primary_number"
+                android:textColor="#4a4a4a"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="@dimen/textSize_medium"
+                android:padding="@dimen/padding_large"
+                android:layout_marginLeft="@dimen/margin_large"
+                android:layout_marginRight="@dimen/margin_large"
+                android:layout_marginBottom="@dimen/margin_small"/>
+
+            <TextView
+                android:id="@+id/secondary_number"
+                android:background="@drawable/mobile_number_bg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/secondary_number"
+                android:textColor="#4a4a4a"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="@dimen/textSize_medium"
+                android:padding="@dimen/padding_large"
+                android:layout_marginLeft="@dimen/margin_large"
+                android:layout_marginRight="@dimen/margin_large"
+                android:layout_marginBottom="@dimen/margin_small"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/close_popup"
+                android:background="@drawable/mobile_number_bg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/textSize_medium"
+                android:padding="@dimen/padding_large"
+                android:textAllCaps="false"
+                android:text="@string/cancel"
+                android:layout_marginLeft="@dimen/margin_large"
+                android:layout_marginRight="@dimen/margin_large"
+                android:layout_marginBottom="@dimen/margin_extra_large"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

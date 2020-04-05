@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_medium"
+        android:minHeight="70dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/padding_medium">
+
+            <TextView
+                android:id="@+id/content_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/main_content_title"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <TextView
+
+                android:id="@+id/content_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/addr_demo" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/content_address_icon_cont"
+            android:layout_width="wrap_content"
+            android:minWidth="90dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="@drawable/ripple_bg"
+            android:layout_height="match_parent"
+            android:layout_gravity="center|end"
+            android:gravity="center|end"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:padding="5dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_loc" />
+
+            <TextView
+                android:id="@+id/content_distance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/approx"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/content_contacts"
+        android:nestedScrollingEnabled="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+
+    <View
+        android:layout_marginBottom="@dimen/margin_extra_large"
+        style="@style/dividerHorizontal" />
+
+
+</LinearLayout>

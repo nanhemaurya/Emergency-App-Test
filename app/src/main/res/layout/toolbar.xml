@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#fff"
+    android:layout_height="?attr/actionBarSize">
+
+<!--    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:minWidth="0dp"
+        android:minHeight="?attr/actionBarSize">
+
+    </androidx.appcompat.widget.Toolbar>-->
+
+    <TextView
+        android:id="@+id/toolbar_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="@string/emergency"
+        android:textSize="20sp" />
+
+
+
+    <ImageView
+        android:id="@+id/toolbar_menu_btn"
+        android:layout_width="?attr/actionBarSize"
+        android:src="@drawable/ic_menu"
+        android:padding="10dp"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="@drawable/ripple_bg"/>
+
+    <TextView
+        android:id="@+id/toolbar_back_btn"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:padding="10dp"
+        android:textSize="16sp"
+        android:text="@string/back"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="@drawable/ripple_bg"
+        android:drawableLeft="@drawable/ic_arrow_left_back"
+        android:drawableStart="@drawable/ic_arrow_left_back" />
+
+    <ImageView
+        android:id="@+id/toolbar_home_btn"
+        android:layout_width="?attr/actionBarSize"
+        android:src="@drawable/ic_home"
+        android:layout_alignParentRight="true"
+        android:padding="12dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="@drawable/ripple_bg"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="#ddd" />
+
+</RelativeLayout>

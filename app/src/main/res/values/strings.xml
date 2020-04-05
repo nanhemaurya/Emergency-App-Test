@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">AssignmentOne</string>
+    <string name="emergency">Emergency</string>
+    <string name="main_content_title">Title</string>
+    <string name="main_content_short_desc">main content short desc</string>
+    <string name="main_content_desc">main content desc</string>
+    <string name="back">Back</string>
+    <string name="approx">Approx. 2 km</string>
+    <string name="addr_demo">W-3, near Radisson Blu Hotel, Vaishali Sector-1, Ghaziabad, Uttar Pradesh-201012</string>
+    <string name="contact_name">Charlie Deet</string>
+    <string name="primary_number">892041496</string>
+    <string name="secondary_number">7428367033</string>
+    <string name="cancel">Cancel</string>
+    <string name="itemId">0</string>
+    <string name="itemTitle">title</string>
+    <string name="contact_id">0</string>
+    <string name="contact_number">99</string>
+    <string name="contact_pNumber">00</string>
+    <string name="contact_sNumber">00</string>
+    <string name="lat">78</string>
+    <string name="lng">43</string>
+    <string name="connection_msg">Network Msg</string>
+    <string name="retry">Retry</string>
+</resources>
